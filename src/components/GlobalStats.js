@@ -24,9 +24,9 @@ export default function GlobalStats({currentScreen}) {
 
   useEffect(() => {
     async function getData() {
-      const response = await fetch("https://api.covid19api.com/summary");
+      const response = await fetch("https://coronavirus-19-api.herokuapp.com/all");
       let data = await response.json();
-      setGlobalData(data.Global);
+      setGlobalData(data);
     }
     getData();
   }, []);
