@@ -1,0 +1,12 @@
+.title{text-align: center;
+    font-size: 25px;
+    color: #3F51B5;
+    text-decoration: underline #4f7db1 2px;
+
+}
+.graph{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 70vw;
+    height: 70vh;
+}

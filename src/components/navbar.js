@@ -7,13 +7,16 @@ import { fade, makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    width: '100vw',
   },
   menuButton: {
     marginRight: theme.spacing(2),
   },
   title: {
     flexGrow: 1,
-    display: "none",
+    fontSize:'30px',
+    textDecoration:'underline white 2px',
+    textAlign:'center',
     [theme.breakpoints.up("sm")]: {
       display: "block",
     },
@@ -31,15 +34,6 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: theme.spacing(1),
       width: "auto",
     },
-  },
-  searchIcon: {
-    padding: theme.spacing(0, 2),
-    height: "100%",
-    position: "absolute",
-    pointerEvents: "none",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
   },
   inputRoot: {
     color: "inherit",
@@ -64,11 +58,11 @@ export default function NavBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="dynamic">
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-           <center> COVID-19 Tracker </center>
-        </Typography>
+           COVID-19 Tracker
+                   </Typography>
         </Toolbar>
       </AppBar>
     </div>
